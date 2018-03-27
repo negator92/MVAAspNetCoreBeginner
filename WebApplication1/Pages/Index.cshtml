@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="POST">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model.Customers)
+            {
+                <tr>
+                    <td>customer.Id</td>
+                    <td>customer.Name</td>
+                    <td>link to edit, delete button</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
