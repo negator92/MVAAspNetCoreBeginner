@@ -11,10 +11,11 @@
 }
 
 <p>Enter your name:</p>
+
 <div asp-validation-summary="All"></div>
 <form method="POST">
     <div asp-validation-summary="All"></div>
-    <div>Name: <input asp-for="Customer.Name" /></div>
-    <span asp-validation-for="Customer.Name" />
-    <input type="submit" />
+    <div>Name: <input asp-for="Customer.Name"></div>
+    <span asp-validation-for="Customer.Name"></span>
+    <input type="submit"></input>
 </form>

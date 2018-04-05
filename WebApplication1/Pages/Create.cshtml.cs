@@ -11,6 +11,7 @@ namespace WebApplication1.Pages
         {
             _db = db;
         }
+
         [BindProperty]
         public Customer Customer {get; set;}
         public void OnGet() { }
